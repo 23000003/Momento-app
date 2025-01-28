@@ -1,8 +1,3 @@
-
 export default function CreateAccount() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div></div>;
 }

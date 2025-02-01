@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Leaderboards() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>About screen</Text>
+      <Text style={styles.text}>Leaderbaords</Text>
     </View>
   );
 }

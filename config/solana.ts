@@ -1,3 +1,5 @@
+import "react-native-get-random-values";
+import "react-native-url-polyfill/auto";
 import nacl from "tweetnacl";
 import {
     clusterApiUrl,
@@ -5,14 +7,11 @@ import {
 } from "@solana/web3.js";
 import * as Linking from "expo-linking";
 
-class SolanaConfig {
-    static dappKeyPair = nacl.box.keyPair();
-    static connection = new Connection(clusterApiUrl("devnet"));
-    static onConnectRedirectLink = Linking.createURL("onConnect");
-    static onDisconnectRedirectLink = Linking.createURL("onDisconnect");
-    static onSignAndSendTransactionRedirectLink = Linking.createURL("onSignAndSendTransaction");  
+export const SolanaConfig = {
+    dappKeyPair: nacl.box.keyPair(),
+    connection: new Connection(clusterApiUrl("devnet")),
+    onConnectRedirectLink: Linking.createURL("onConnect"),
+    onDisconnectRedirectLink: Linking.createURL("onDisconnect"),
+    onSignAndSendTransactionRedirectLink: Linking.createURL("onSignAndSendTransaction"),
+    naclHelper: nacl,
 }
-
-export { 
-    SolanaConfig
-};

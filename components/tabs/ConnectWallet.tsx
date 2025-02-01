@@ -7,7 +7,7 @@ export default function ConnectWalletComponent() {
   const [connectMessage, setConnectMessage] = useState<string | null>(null);
 
   const ConnectWalletOnClick = async () =>{
-    const message = await SolanaBlockchainService.ConnectWallet();
+    const message = await SolanaBlockchainService.connectWallet();
     setConnectMessage(message);
   }
 
@@ -24,7 +24,7 @@ export default function ConnectWalletComponent() {
       onPress={ConnectWalletOnClick}
     >
       <Text style={{ color: 'white', fontWeight: 'bold' }}>
-        Connect Wallet
+        Connect Wallet w
       </Text>
     </Pressable>
   );

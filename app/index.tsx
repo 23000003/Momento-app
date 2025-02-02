@@ -4,6 +4,7 @@ import { useWalletContext } from "@/context/PhantomWalletContext";
 import TestSendSol from "@/components/TestSendSol";
 import TestClaimToken from "@/components/TestClaimToken";
 import TestMintNFT from "@/components/TestMintNFT";
+
 export default function Index() {
   const {
     phantomWalletPublicKey,

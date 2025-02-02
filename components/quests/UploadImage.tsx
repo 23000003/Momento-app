@@ -6,7 +6,7 @@
 //   // const [date, setDate] = useState<string | null>(null);
 
 //   const handleSelectImage = () => {
-    
+
 //   };
 
 //   return (
@@ -16,5 +16,3 @@
 //     </View>
 //   );
 // };
-
-
